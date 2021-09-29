@@ -1,0 +1,131 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: sans-serif;
+}
+/* HEADER */
+.header{
+    background-color: rgb(253, 143, 99);
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+.head__ig{
+    display: none;
+}
+@media (min-width:900px) {
+        .head__ig{
+            display: block;
+            position: absolute;
+            right: 50px;
+            top: 50px;
+        }
+}
+
+.header__img{
+    border-radius: 50%;
+    margin-top: 5px;
+    
+}
+
+
+/* Main */
+
+.section{
+    max-width: 1200px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(300px,1fr));
+    padding: 60px 0;
+    gap: 2em;
+
+}
+.card{
+    padding-bottom: 2.5em;
+    width: 100%;
+    border-radius: 1em;
+    box-shadow: 0 0 6px rgba(0, 0, 0, .5);
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+}
+.card__img{
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    border-radius: 1em 1em 0 0;
+    background-image: var(--image);
+    height: 45vh;
+    overflow: hidden;
+}
+.card:nth-of-type(1){
+    --image: url(../img/Cebolla.png)
+}
+.card:nth-of-type(2){
+    --image: url(../img/hamburgesa2.jpg)
+}
+.card:nth-of-type(3){
+    --image: url(../img/hamburgesa3.jpg);
+}
+.card__text{
+    text-align: center;
+    padding: 1em;
+}
+.card__info{
+    padding: 1.5em 0;
+    text-align: justify;
+    line-height: 2em;
+}
+
+.card__link{
+    margin-left: 1em;
+    background: rgb(253, 143, 99);
+    color: black ;
+    font-weight: bold;
+    text-decoration: none;
+    padding: 1em 3em;
+    width: 200px;
+    text-align: center;
+    margin: 0 auto;
+    margin-top: auto;
+    border-radius: 5em;
+    transition: 0.5s all;
+}
+.card__link:hover{
+    background-color: black;
+    color: #fff;
+}
+
+/* Footer */
+
+
+.footer{
+    display: flex;
+    background: rgb(253, 143, 99);
+    justify-content: space-between;
+    align-items: center;
+}
+.copyright{
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 13px;
+    
+}
+.footer__ig{
+    width: 40px;
+    cursor: pointer;
+}
+
+@media (min-width:900px){
+    .footer{
+        justify-content: space-evenly;
+    }
+    .copyright{
+        font-size: 25px;
+        color: #000;
+        text-transform: capitalize;
+    }
+}
