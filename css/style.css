@@ -86,7 +86,7 @@ body{
 }
 .section__menu{
     position: absolute;
-    left: 100px;
+        left: 55px;
     width: 70%;
 }
 @media (min-width:900px){
