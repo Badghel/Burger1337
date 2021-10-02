@@ -4,7 +4,7 @@
         window.open("https://www.instagram.com/_burger1337/?hl=es");
     })
 
-    let ig2 = document.querySelector(".ig2");
-    ig2.addEventListener("click",()=>{
-        window.open("https://www.instagram.com/_burger1337/?hl=es");
+    let wsp = document.getElementById("wsp");
+    wsp.addEventListener("click",()=>{
+        window.open("https://api.whatsapp.com/message/PTVOAROKM5W3N1");
     })
